@@ -25,7 +25,7 @@ function Contact() {
           Get in Touch
         </p>
         <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-          Contact Me
+          Send A Message
         </h2>
         <p className="mt-3 text-slate-400">
           Open to collaborations, internships, and analyst opportunities!

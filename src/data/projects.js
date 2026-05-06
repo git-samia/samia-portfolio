@@ -42,8 +42,9 @@ export const projects = [
 ]
 
 export const skills = {
-  'Languages': ['Python', 'SQL', 'JavaScript', 'R'],
-  'Analysis': ['Pandas', 'NumPy', 'Scikit-learn', 'Statistics', 'A/B Testing'],
-  'Visualization': ['Matplotlib', 'Seaborn', 'Power BI', 'Tableau', 'Excel'],
-  'Tools': ['Git', 'Jupyter', 'MySQL', 'PostgreSQL', 'OpenCV'],
+  'Languages': ['Python', 'SQL', 'R', 'Java', 'JavaScript', 'HTML/CSS'],
+  'Databases': ['PostgreSQL', 'SQLite', 'MongoDB', 'Firebase'],
+  'Tools & Frameworks': ['Pandas', 'NumPy', 'Scikit-Learn','Matplotlib', 'Seaborn', 'Git', 'GitHub', 'MATLAB', 'Google Colab', 'Jupyter','VS Code', 'Linux', 'Figma', 'ChromaDB', 'MS Office Suite'],
+  'Data & Analytics': ['ETL pipelines', 'Data Modeling', 'Feature Engineering', 'Database Design', 'Query Optimization', 'Tableau', 'Power BI', 'MS Excel'],
+  'Practices':['REST APIs', 'Agile', 'SDLC', 'Testing', 'CI/CD'],
 }
