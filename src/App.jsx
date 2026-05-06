@@ -49,7 +49,7 @@ function App() {
       {/* App shell */}
       <div className="relative z-10 min-h-screen">
         {/* Gooey nav bar */}
-        <header className="relative z-30 flex items-center justify-center py-4" style={{ isolation: 'isolate' }}>
+        <header className="sticky top-0 z-30 flex items-center justify-center border-b border-white/5 bg-[#06050e] py-4">
           <GooeyNav
             items={navItems}
             animationTime={600}
