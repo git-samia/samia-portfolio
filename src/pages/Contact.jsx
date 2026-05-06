@@ -28,14 +28,14 @@ function Contact() {
           Contact Me
         </h2>
         <p className="mt-3 text-slate-400">
-          Open to internships, collaborations, and analyst opportunities.
+          Open to collaborations, internships, and analyst opportunities!
         </p>
 
         {submitted ? (
           <div className="mt-10 rounded-2xl border border-violet-400/30 bg-violet-500/10 p-8">
             <p className="text-lg font-semibold text-white">Thank you!</p>
             <p className="mt-2 text-sm text-slate-300">
-              Your message has been sent. I will get back to you soon.
+              Your message has been sent, I will get back to you soon!
             </p>
             <button
               onClick={() => setSubmitted(false)}
@@ -83,7 +83,7 @@ function Contact() {
                 rows={5}
                 required
                 className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-violet-400 transition focus:ring-2"
-                placeholder="Tell me about the opportunity..."
+                placeholder="Enter your message..."
               />
             </label>
 
@@ -99,13 +99,13 @@ function Contact() {
         {/* Social links */}
         <div className="mt-10 flex justify-center gap-6">
           <a
-            href="mailto:samia@email.com"
+            href="mailto:samiakatingiri@gmail.com"
             className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300"
           >
             <FaEnvelope className="text-lg" /> Email
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/git-samia"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300"
@@ -113,7 +113,7 @@ function Contact() {
             <FaGithub className="text-lg" /> GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/samia-katingiri"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300"
