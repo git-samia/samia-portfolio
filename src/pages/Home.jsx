@@ -19,7 +19,7 @@ function Home() {
         {/* Info */}
         <div className="max-w-xl text-center md:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">
-            Welcome
+            About Me!
           </p>
           <h1 className="mt-3 text-4xl font-black leading-tight text-white sm:text-5xl md:text-6xl">
             Samia Katingiri
@@ -66,7 +66,7 @@ function Home() {
               View Resume
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/git-samia"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-violet-400 hover:text-violet-200"
@@ -74,7 +74,7 @@ function Home() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/samia-katingiri"
               target="_blank"
               rel="noreferrer"
               className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-violet-400 hover:text-violet-200"

@@ -12,7 +12,7 @@ function Projects() {
           Projects
         </h2>
         <p className="mt-3 max-w-2xl text-base text-slate-400">
-          Hover over each project to see the glow effect. Click to visit the repo.
+          These are some projects I have worked on. Click to visit the GitHub repo.
         </p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
