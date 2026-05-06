@@ -1,6 +1,6 @@
 import { skills } from '../data/projects'
 
-const profilePicUrl = 'https://api.dicebear.com/9.x/initials/svg?seed=SK&backgroundColor=7c3aed&fontSize=40'
+const profilePicUrl = '/samia.jpg'
 
 function Home() {
   return (
