@@ -28,10 +28,7 @@ function Home() {
             Computer Science Student &middot; Aspiring Data Analyst
           </p>
           <p className="mt-5 text-base leading-relaxed text-slate-300">
-            I am a 3rd-year CS student passionate about turning complex data into actionable
-            insights. I build analytical projects, write clean Python code, and design clear
-            dashboards. I am looking for opportunities where I can contribute to data-driven
-            decision-making.
+            Hi! I'm Samia, studying Computer Science at the University of Alberta. I'm genuinely passionate about solving problems through data, AI, and software development. I'm passionate about learning new technologies, building projects that have real impact, and growing both technically and professionally through every experience.
           </p>
 
           {/* Skills */}
