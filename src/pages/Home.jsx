@@ -8,11 +8,11 @@ function Home() {
       <div className="flex flex-col items-center gap-10 md:flex-row md:gap-16">
         {/* Profile picture */}
         <div className="relative shrink-0">
-          <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-400 opacity-70 blur-lg" />
+          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-400 opacity-70 blur-lg" />
           <img
             src={profilePicUrl}
             alt="Samia Katingiri"
-            className="relative h-48 w-48 rounded-full border-2 border-white/20 object-cover shadow-2xl md:h-56 md:w-56"
+            className="relative w-48 md:w-64 rounded-2xl border-2 border-white/20 object-cover shadow-2xl"
           />
         </div>
 
