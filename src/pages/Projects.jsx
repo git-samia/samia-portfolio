@@ -1,24 +1,25 @@
 import BorderGlow from '../components/BorderGlow'
+import ScrollReveal from '../components/ScrollReveal'
 import { projects } from '../data/projects'
 
 function Projects() {
   return (
     <div className="px-4 py-16">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8b2020]">
           Portfolio
         </p>
-        <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+        <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl" style={{ fontFamily: 'var(--font-heading)' }}>
           Projects
         </h2>
         <p className="mt-3 max-w-2xl text-base text-slate-400">
-          These are some projects I have worked on. Click to visit the GitHub repo.
+          These are some projects I have worked on, click to visit the GitHub repo!
         </p>
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
+            <ScrollReveal key={project.id} delay={i * 120}>
             <a
-              key={project.id}
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
@@ -28,20 +29,10 @@ function Projects() {
                 colors={project.colors}
                 backgroundColor="#0c0a14"
                 borderRadius={20}
-                glowColor="260 80 70"
+                glowColor="35 80 50"
                 glowIntensity={1.2}
               >
                 <div className="flex flex-col gap-4 p-6">
-                  {/* Icon circle */}
-                  <div
-                    className="flex h-14 w-14 items-center justify-center rounded-xl text-2xl font-black text-white"
-                    style={{
-                      background: `linear-gradient(135deg, ${project.colors[0]}, ${project.colors[2] || project.colors[1]})`,
-                    }}
-                  >
-                    {project.title.charAt(0)}
-                  </div>
-
                   <h3 className="text-lg font-semibold text-white">
                     {project.title}
                   </h3>
@@ -63,6 +54,7 @@ function Projects() {
                 </div>
               </BorderGlow>
             </a>
+            </ScrollReveal>
           ))}
         </div>
       </div>

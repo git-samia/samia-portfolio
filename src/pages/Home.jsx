@@ -1,4 +1,8 @@
 import { skills } from '../data/projects'
+import GradientText from '../components/GradientText'
+import BlurText from '../components/BlurText'
+import TypingEffect from '../components/TypingEffect'
+import ScrollReveal from '../components/ScrollReveal'
 
 const profilePicUrl = '/samia.jpg'
 
@@ -8,9 +12,9 @@ function Home() {
       <div className="mx-auto max-w-5xl space-y-10">
         {/* Top row: picture aligned with about text */}
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-stretch md:gap-12">
-          {/* Profile picture — stretches to match text height */}
+          {/* Profile picture */}
           <div className="relative shrink-0 self-stretch md:w-64">
-            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-cyan-400 opacity-70 blur-lg" />
+            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-[#510400] via-[#3d0300] to-[#6b0f0a] opacity-80 blur-lg" />
             <img
               src={profilePicUrl}
               alt="Samia Katingiri"
@@ -20,18 +24,31 @@ function Home() {
 
           {/* Info text */}
           <div className="flex-1 text-center md:text-left">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8b2020]">
               About Me!
             </p>
-            <h1 className="mt-3 text-4xl font-black leading-tight text-white sm:text-5xl md:text-6xl">
+
+            <h1 className="mt-3 text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl" style={{ fontFamily: 'var(--font-heading)' }}>
               Samia Katingiri
             </h1>
-            <p className="mt-2 text-lg font-medium text-violet-200/90">
-              Computer Science Student &middot; Aspiring Data Analyst
+
+            {/* Typing effect subtitle */}
+            <p className="mt-2 text-lg font-medium text-[#8b2020]">
+              <TypingEffect
+                text="Computer Science Student · Aspiring Data Analyst"
+                speed={50}
+                delay={600}
+              />
             </p>
-            <p className="mt-5 text-base leading-relaxed text-slate-300">
-              Hi! I'm Samia, studying Computer Science at the University of Alberta. I'm genuinely passionate about solving problems through data, AI, and software development. I'm passionate about learning new technologies, building projects that have real impact, and growing both technically and professionally through every experience.
-            </p>
+
+            {/* Blur-in description */}
+            <BlurText
+              text="Hi! I'm Samia, studying Computer Science at the University of Alberta. I'm genuinely passionate about solving problems through data, AI, and software development. I'm passionate about learning new technologies, building projects that have real impact, and growing both technically and professionally through every experience."
+              delay={40}
+              animateBy="words"
+              direction="bottom"
+              className="mt-5 text-base leading-relaxed text-slate-300"
+            />
 
             {/* CTA */}
             <div className="mt-6 flex flex-wrap justify-center gap-4 md:justify-start">
@@ -39,15 +56,15 @@ function Home() {
                 href="/SamiaKatingiri_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-xl bg-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:bg-violet-400"
+                className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#510400] hover:text-[#c45050]"
               >
-                View Resume
+                Résumé
               </a>
               <a
                 href="https://github.com/git-samia"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-violet-400 hover:text-violet-200"
+                className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#510400] hover:text-[#c45050]"
               >
                 GitHub
               </a>
@@ -55,7 +72,7 @@ function Home() {
                 href="https://linkedin.com/in/samia-katingiri"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-violet-400 hover:text-violet-200"
+                className="rounded-xl border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#510400] hover:text-[#c45050]"
               >
                 LinkedIn
               </a>
@@ -63,11 +80,11 @@ function Home() {
           </div>
         </div>
 
-        {/* Skills — full width below, slightly bigger */}
+        {/* Skills — scroll reveal on each category */}
         <div className="space-y-5">
-          {Object.entries(skills).map(([category, items]) => (
-            <div key={category}>
-              <h3 className="mb-2 text-sm font-bold uppercase tracking-widest text-violet-400">
+          {Object.entries(skills).map(([category, items], i) => (
+            <ScrollReveal key={category} delay={i * 150}>
+              <h3 className="mb-2 text-sm font-bold uppercase tracking-widest text-[#8b2020]">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-2.5">
@@ -80,7 +97,7 @@ function Home() {
                   </span>
                 ))}
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

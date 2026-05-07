@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import SplashCursor from './components/SplashCursor'
-import PixelSnow from './components/PixelSnow'
+import Galaxy from './components/Galaxy'
 import GooeyNav from './components/GooeyNav'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
@@ -36,14 +36,20 @@ function App() {
       {/* Splash cursor effect */}
       <SplashCursor />
 
-      {/* Pixel snow background */}
-      <PixelSnow
-        color="#c084fc"
-        speed={1.0}
-        density={0.25}
-        variant="snowflake"
-        brightness={1.2}
-        pixelResolution={180}
+      {/* Galaxy background */}
+      <Galaxy
+        starSpeed={0.4}
+        density={1.2}
+        speed={0.6}
+        hueShift={350}
+        saturation={0.6}
+        glowIntensity={0.4}
+        twinkleIntensity={0.4}
+        rotationSpeed={0.05}
+        mouseInteraction={true}
+        mouseRepulsion={true}
+        repulsionStrength={1.5}
+        transparent={true}
       />
 
       {/* App shell */}

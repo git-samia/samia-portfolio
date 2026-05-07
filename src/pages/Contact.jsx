@@ -21,10 +21,10 @@ function Contact() {
   return (
     <div className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center px-4 py-16">
       <div className="w-full max-w-lg text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-violet-300">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8b2020]">
           Get in Touch
         </p>
-        <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+        <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl" style={{ fontFamily: 'var(--font-heading)' }}>
           Send A Message
         </h2>
         <p className="mt-3 text-slate-400">
@@ -32,14 +32,14 @@ function Contact() {
         </p>
 
         {submitted ? (
-          <div className="mt-10 rounded-2xl border border-violet-400/30 bg-violet-500/10 p-8">
+          <div className="mt-10 rounded-2xl border border-[#510400]/40 bg-[#510400]/15 p-8">
             <p className="text-lg font-semibold text-white">Thank you!</p>
             <p className="mt-2 text-sm text-slate-300">
               Your message has been sent, I will get back to you soon!
             </p>
             <button
               onClick={() => setSubmitted(false)}
-              className="mt-4 rounded-xl border border-white/20 px-5 py-2 text-sm font-medium text-white transition hover:border-violet-400"
+              className="mt-4 rounded-xl border border-white/20 px-5 py-2 text-sm font-medium text-white transition hover:border-[#510400]"
             >
               Send another message
             </button>
@@ -60,7 +60,7 @@ function Contact() {
                 type="text"
                 name="name"
                 required
-                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-violet-400 transition focus:ring-2"
+                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
                 placeholder="Your name"
               />
             </label>
@@ -71,7 +71,7 @@ function Contact() {
                 type="email"
                 name="email"
                 required
-                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-violet-400 transition focus:ring-2"
+                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
                 placeholder="you@example.com"
               />
             </label>
@@ -82,14 +82,14 @@ function Contact() {
                 name="message"
                 rows={5}
                 required
-                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-violet-400 transition focus:ring-2"
+                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
                 placeholder="Enter your message..."
               />
             </label>
 
             <button
               type="submit"
-              className="w-full rounded-xl bg-violet-500 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:bg-violet-400"
+              className="w-full rounded-xl bg-rose-950 py-3 text-sm font-semibold text-white shadow-lg shadow-[#510400]/30 transition hover:bg-[#6b0f0a]"
             >
               Send Message
             </button>
@@ -100,7 +100,7 @@ function Contact() {
         <div className="mt-10 flex justify-center gap-6">
           <a
             href="mailto:samiakatingiri@gmail.com"
-            className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300"
+            className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-[#c45050]"
           >
             <FaEnvelope className="text-lg" /> Email
           </a>
@@ -108,7 +108,7 @@ function Contact() {
             href="https://github.com/git-samia"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300"
+            className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-[#c45050]"
           >
             <FaGithub className="text-lg" /> GitHub
           </a>
@@ -116,7 +116,7 @@ function Contact() {
             href="https://linkedin.com/in/samia-katingiri"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-violet-300"
+            className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-[#c45050]"
           >
             <FaLinkedin className="text-lg" /> LinkedIn
           </a>

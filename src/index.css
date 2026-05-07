@@ -2,6 +2,7 @@
 
 :root {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Playfair Display", Georgia, serif;
   color: #e2e8f0;
   background: #06050e;
   font-synthesis: none;
@@ -9,10 +10,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-1: #c084fc;
-  --color-2: #f472b6;
-  --color-3: #38bdf8;
-  --color-4: #34d399;
+  --color-1: #510400;
+  --color-2: #3d0300;
+  --color-3: #6b0f0a;
+  --color-4: #7a1a0e;
 }
 
 * {
@@ -33,6 +34,6 @@ body {
 }
 
 ::selection {
-  background: rgba(139, 92, 246, 0.4);
+  background: rgba(81, 4, 0, 0.4);
   color: white;
 }
