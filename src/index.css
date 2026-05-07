@@ -33,6 +33,15 @@ body {
   background: #06050e;
 }
 
+@keyframes drift {
+  from { background-position: 0 0; }
+  to { background-position: 30px 30px; }
+}
+
+.dot-grid {
+  animation: drift 20s linear infinite;
+}
+
 ::selection {
   background: rgba(81, 4, 0, 0.4);
   color: white;

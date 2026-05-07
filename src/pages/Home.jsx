@@ -24,7 +24,7 @@ function Home() {
 
           {/* Info text */}
           <div className="flex-1 text-center md:text-left">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8b2020]">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#8b2020]">
               About Me!
             </p>
 

@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="px-4 py-16">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8b2020]">
+        <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#8b2020]">
           Portfolio
         </p>
         <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl" style={{ fontFamily: 'var(--font-heading)' }}>

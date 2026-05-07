@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import SplashCursor from './components/SplashCursor'
-import Galaxy from './components/Galaxy'
+import DotGrid from './components/DotGrid'
 import GooeyNav from './components/GooeyNav'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
@@ -36,21 +36,20 @@ function App() {
       {/* Splash cursor effect */}
       <SplashCursor />
 
-      {/* Galaxy background */}
-      <Galaxy
-        starSpeed={0.4}
-        density={1.2}
-        speed={0.6}
-        hueShift={350}
-        saturation={0.6}
-        glowIntensity={0.4}
-        twinkleIntensity={0.4}
-        rotationSpeed={0.05}
-        mouseInteraction={true}
-        mouseRepulsion={true}
-        repulsionStrength={1.5}
-        transparent={true}
-      />
+      {/* Dot grid background */}
+      <div style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
+        <DotGrid
+          dotSize={4}
+          gap={20}
+          baseColor="#3a3a3a"
+          activeColor="#8b2020"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
 
       {/* App shell */}
       <div className="relative z-10 min-h-screen">

@@ -21,14 +21,14 @@ function Contact() {
   return (
     <div className="flex min-h-[calc(100vh-80px)] flex-col items-center justify-center px-4 py-16">
       <div className="w-full max-w-lg text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#8b2020]">
+        <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#8b2020]">
           Get in Touch
         </p>
         <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl" style={{ fontFamily: 'var(--font-heading)' }}>
           Send A Message
         </h2>
         <p className="mt-3 text-slate-400">
-          Open to collaborations, internships, and analyst opportunities!
+          Open to collaborations, internships, and opportunities across IT and the data space, with strong interests in data science & analysis, ML, software and emerging AI applications. Happy to connect!
         </p>
 
         {submitted ? (
@@ -60,7 +60,7 @@ function Contact() {
                 type="text"
                 name="name"
                 required
-                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
+                className="w-full rounded-xl border border-white/15 bg-[#0c0a14] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
                 placeholder="Your name"
               />
             </label>
@@ -71,7 +71,7 @@ function Contact() {
                 type="email"
                 name="email"
                 required
-                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
+                className="w-full rounded-xl border border-white/15 bg-[#0c0a14] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
                 placeholder="you@example.com"
               />
             </label>
@@ -82,7 +82,7 @@ function Contact() {
                 name="message"
                 rows={5}
                 required
-                className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
+                className="w-full rounded-xl border border-white/15 bg-[#0c0a14] px-4 py-3 text-sm text-white placeholder-slate-500 outline-none ring-[#510400]/60 transition focus:ring-2"
                 placeholder="Enter your message..."
               />
             </label>
