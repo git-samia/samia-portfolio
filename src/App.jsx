@@ -67,7 +67,7 @@ function App() {
         <ActiveComponent />
 
         <footer className="border-t border-white/5 py-6 text-center text-xs text-slate-500">
-          © {new Date().getFullYear()} Samia Katingiri &middot; Built with React + React Bits
+          © {new Date().getFullYear()} Samia Katingiri
         </footer>
       </div>
     </>
